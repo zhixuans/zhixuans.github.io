@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>响应式布局网站</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+    <script type="text/javascript" src="js/json.js"></script>
+    <!-- <script type="text/javascript" src="data/data.json"></script> -->
+    <!-- <script type="text/javascript" src="js/demojs.js"></script> -->
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+    <header id="head">
+        <div class="header_content">
+            <div class="logo">
+                <div class="logo_img"></div>
+            </div>
+            <div class="header_right">
+                <ul>
+                    <li class="java">加入我们</li>
+                    <li class="html5">新闻资讯</li>
+                    <li class="big">招商加盟</li>
+                    <li class="php">关于快招</li>
+                    <li class="shouye">
+                        <a href="index.html">首页</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="center_content">
+        <div class="center_box">
+            <div class="xinwen">
+                <div class="content_title">
+                    <h3>新闻资讯</h3>
+                </div>
+                <div id="xinwen_content"></div>
+                <!-- <div class="xinwen_content">
+                    <div class="xinwen_item">
+                        <div class="item_box">
+                            <div class="xinwen_img"></div>
+                            <div class="xinwen_neirong">
+                                <div class="neirong_box">
+                                    <h4>央行将在香港发行300亿元央票 年内已发行400亿，中新经纬</h4>
+                                    <p>展旺物流（民众格力小家电外民众格力小家电…</p>
+                                    <p>2020.04.29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xinwen_item">
+                        <div class="item_box">
+                            <div class="xinwen_img"></div>
+                            <div class="xinwen_neirong">
+                                <div class="neirong_box">
+                                    <h4>{{item.title}}</h4>
+                                    <p>展旺物流（民众格力小家电外民众格力小家电…</p>
+                                    <p>2020.04.29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xinwen_item">
+                        <div class="item_box">
+                            <div class="xinwen_img"></div>
+                            <div class="xinwen_neirong">
+                                <div class="neirong_box">
+                                    <h4>央行将在香港发行300亿元央票 年内已发行400亿，中新经纬</h4>
+                                    <p>展旺物流（民众格力小家电外民众格力小家电…</p>
+                                    <p>2020.04.29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <footer id="foot">
+        <div class="foot_content">
+            <div class="foot_left">
+                <ul>
+                    <li class="first">联系我们</li>
+                    <li>微信客服</li>
+                    <li>电话联系</li>
+                    <li>留言咨询</li>
+                </ul>
+                <ul>
+                    <li class="first">加入我们</li>
+                    <li>招商加盟</li>
+                    <li>招聘信息</li>
+                </ul>
+                <ul>
+                    <li class="first">线下门店</li>
+                    <li>所有门店</li>
+                </ul>
+            </div>
+            <div class="qc">
+                <div>
+                    <img src="images/公众号二维码.png" alt="" width="140px" height="140px">
+                    <span>关注我们</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+
+ 
+ var str = '';
+ for (var i = 0; i < data.proList.length; i++) {
+     str = str + '<div class="xinwen_item"><div class="item_box"><div class="xinwen_img" style="background: url('+ data.proList[i].img +') no-repeat center center;background-size:cover;"></div><div class="xinwen_neirong"><div class="neirong_box"><h4>'+ data.proList[i].title +'</h4><p>'+ data.proList[i].desc +'</p> <p>'+ data.proList[i].time +'</p></div></div></div></div>';
+ }
+ 
+ console.log(str);
+ document.getElementById('xinwen_content').innerHTML=str;
+</script>
+</body>
+
+</html>
