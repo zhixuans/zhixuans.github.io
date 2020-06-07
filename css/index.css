@@ -204,50 +204,7 @@ body{
     width: 350px;
     height: 360px;
 }
-/* 底部样式 */
-#foot{ 
-    width: 100%;
-    height: 296px;
-    background-color: #f8f8f8;
-    margin-top: 24px;
-    /* padding-top: 24px; */
-}
-.foot_content{
-    margin: 0px auto;
-    padding-top: 24px;
-    width: 1200px;
-    height: 296px;
-    overflow: hidden;
-}
-.foot_left li{
-    list-style-type: none;
-    font-size: 14px;
-    line-height: 36px;
-    color: #222;
-}
-.foot_left ul{
-    float: left;
-    margin-right: 68px;
-    /* line-height: 24px; */
-}
-.foot_left .first{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
-.foot_content .qc{
-    width: 140px;
-    height: 162x;
-    float: right;
-    padding: 8px 0 10px 0;
-    background-color: #fff;
-    text-align: center;
-    border-radius:8px;
-}
-.foot_content .qc span{
-    font-size: 14px;
-    color: #666;
-}
+
 @media only screen and (max-width:1700px){
     .imgbox{
         height: 450px;
@@ -306,9 +263,6 @@ body{
         width: 42.5%;
         height: 504px;
         margin: 72px auto;
-    }
-    .foot_content,#main{
-        width: 100%;
     }
 }
 @media only screen and (max-width:1000px){
