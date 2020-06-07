@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+/* 底部样式 */
+#foot{ 
+    width: 100%;
+    /* height: 296px; */
+    background-color: #f8f8f8;
+    /* margin-top: 24px; */
+    /* padding-top: 24px; */
+}
+.foot_content{
+    margin: 0px auto;
+    /* padding-top: 24px; */
+    width: 1200px;
+    /* height: 296px; */
+    overflow: hidden;
+}
+.foot_box{
+    margin-top: 48px;
+}
+.foot_left{
+    width: 500px;
+    float: left;
+}
+.foot_right{
+    float: right;
+    /* width: 140px; */
+    /* height: 162x; */
+}
+.foot_left li{
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 36px;
+    color: #222;
+}
+.foot_left ul{
+    float: left;
+    margin-right: 68px;
+    /* line-height: 24px; */
+}
+
+.foot_left .first{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.qc{
+    width: 140px;
+    height: 162x;
+    /* float: right; */
+    padding: 8px 0 10px 0;
+    background-color: #fff;
+    text-align: center;
+    border-radius:8px;
+}
+.qc img{
+    width: 140px;
+    height: 140px;
+}
+.qc span{
+    font-size: 14px;
+    color: #666;
+    display: block;
+}
+.foot_bottom{
+    padding-top: 32px;
+    height: 60px;
+    line-height: 60px;
+    clear: both;
+    font-size: 14px;
+    color: #222;
+}
+.foot_bottom span{
+    display: block;
+}
+@media only screen and (max-width:1248px){
+    .foot_content{
+        width: 100%;
+    }
+    .foot_box{
+        padding: 0 24px;
+    }
+}
+@media only screen and (max-width:840px){
+    .foot_left{
+        width: 100%;
+    }
+    .foot_right{
+        width: 100%;       
+    }
+    .foot_bottom{
+        padding-top: 16px;
+    }
+    .foot_bottom span{
+        width: 100%;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .qc{
+        margin: 16px auto;
+        width: 100px;
+        height: 126px;
+        padding: 4px 0 4px 0;
+        border-radius:4px;
+    }
+    .qc img{
+        width: 100px;
+        height: 100px;
+    }
+    .foot_left ul{
+        width: 100%;;
+        margin-right: 0px;
+        /* line-height: 24px; */
+    }
+    .foot_left .first{
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 52px;
+        margin-bottom: 0px;
+        color: #222;
+    }
+    .foot_left li{
+        list-style-type: none;
+        font-size: 14px;
+        line-height: 40px;
+        color: #666;
+    }
+    
+}

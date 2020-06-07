@@ -9,11 +9,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>快招</title>
+    <title>响应式布局网站</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/news.css">
-    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/reset.css">
     <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
     <script type="text/javascript" src="js/json.js"></script>
     <!-- <script type="text/javascript" src="data/data.json"></script> -->
@@ -44,55 +44,51 @@
             </div>
         </div>
     </header>
-    <div class="center">
-        <div class="center_content">
-            <div class="xinwen">
+    <div class="center_content">
+        <div class="center_box">
+            <h5>新闻详情02</h5>
+ <!--            <div class="xinwen">
                 <div class="content_title">
                     <h3>新闻资讯</h3>
                 </div>
                 <div id="xinwen_content"></div>
-            </div>
+            </div> -->
         </div>
     </div>
     <footer id="foot">
         <div class="foot_content">
-            <div class="foot_box">
-                <div class="foot_left">
-                    <ul>
-                        <li class="first">联系我们</li>
-                        <li>微信客服</li>
-                        <li>电话联系</li>
-                        <li>留言咨询</li>
-                    </ul>
-                    <ul>
-                        <li class="first">加入我们</li>
-                        <li>招商加盟</li>
-                        <li>招聘信息</li>
-                    </ul>
-                    <ul>
-                        <li class="first">线下门店</li>
-                        <li>所有门店</li>
-                    </ul>
-                </div>
-                <div class="foot_right">
-                    <div class="qc">
-                            <img src="images/公众号二维码.png" alt="">
-                            <span>关注我们</span>
-                    </div>
-                </div>
-                <div class="foot_bottom">
-                    <span class="left_float">粤ICP备19090896号-2</span>
-                    <span class="right_float">Copyright © 2020 快招 Team All Rights Reserved</span>
+            <div class="foot_left">
+                <ul>
+                    <li class="first">联系我们</li>
+                    <li>微信客服</li>
+                    <li>电话联系</li>
+                    <li>留言咨询</li>
+                </ul>
+                <ul>
+                    <li class="first">加入我们</li>
+                    <li>招商加盟</li>
+                    <li>招聘信息</li>
+                </ul>
+                <ul>
+                    <li class="first">线下门店</li>
+                    <li>所有门店</li>
+                </ul>
+            </div>
+            <div class="qc">
+                <div>
+                    <img src="images/公众号二维码.png" alt="" width="140px" height="140px">
+                    <span>关注我们</span>
                 </div>
             </div>
         </div>
+        <a href=""></a>
     </footer>
     <script type="text/javascript">
 
  
  var str = '';
  for (var i = 0; i < data.proList.length; i++) {
-     str = str + '<div class="xinwen_item"><a href="'+ data.proList[i].link +'" class="item_box"><div class="xinwen_img" style="background: url('+ data.proList[i].img +') no-repeat center center;background-size:cover;"></div><div class="xinwen_neirong"><div class="neirong_box"><div class="tad"><h4>'+ data.proList[i].title +'</h4><p class="desc">'+ data.proList[i].desc +'</p></div><p>'+ data.proList[i].time +'</p></div></div></a></div>';
+     str = str + '<div class="xinwen_item"><a href="" class="item_box"><div class="xinwen_img" style="background: url('+ data.proList[i].img +') no-repeat center center;background-size:cover;"></div><div class="xinwen_neirong"><div class="neirong_box"><div class="tad"><h4>'+ data.proList[i].title +'</h4><p class="desc">'+ data.proList[i].desc +'</p></div><p>'+ data.proList[i].time +'</p></div></div></a></div>';
  }
  
  console.log(str);
