@@ -103,6 +103,8 @@ body{
     /* margin-bottom: 29px; */
     box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.1);
     -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
 }
 .xinwen_img{
     /* background: url(../images/新闻资讯大图01.jpg) no-repeat center center;
