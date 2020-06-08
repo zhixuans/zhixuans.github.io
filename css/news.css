@@ -1,11 +1,6 @@
 
 /* 对头部底部中间进项通用样式设置 */
-.left_float{
-    float: left;
-}
-.right_float{
-    float: right;
-}
+
 body{
     background-color: #ffffff;
     

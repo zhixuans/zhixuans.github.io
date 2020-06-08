@@ -5,6 +5,12 @@
 a{
     text-decoration: none;
 }
+.left_float{
+    float: left;
+}
+.right_float{
+    float: right;
+}
 /* 底部样式 */
 #foot{ 
     width: 100%;
