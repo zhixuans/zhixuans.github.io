@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/news.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/public.css">
     <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
     <script type="text/javascript" src="js/json.js"></script>
     <!-- <script type="text/javascript" src="data/data.json"></script> -->
@@ -26,26 +26,36 @@
         <![endif]-->
 
 
-    <header id="head">
-        <div class="header_content">
-            <div class="logo">
-                <div class="logo_img"></div>
+        <header id="head" class="head_fixed">
+            <div class="header_content">
+                <div class="logo">
+                    <div class="logo_img logo_b"></div>
+                </div>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle">
+                <div class="header_right li_b">
+                    <ul>
+                        <li class="java">
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li class="html5">
+                            <a href="news.html">关于快招</a>
+                        </li>
+                        <li class="big">
+                            <a href="news.html">招商加盟</a>
+                        </li>
+                        <li class="php">
+                            <a href="news.html">新闻资讯</a>
+                        </li>
+                        <li class="shouye">
+                            <a href="news.html">加入我们</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="header_right">
-                <ul>
-                    <li class="java">加入我们</li>
-                    <li class="html5">新闻资讯</li>
-                    <li class="big">招商加盟</li>
-                    <li class="php">关于快招</li>
-                    <li class="shouye">
-                        <a href="index.html">首页</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="center_content">
-        <div class="center_box">
+        </header>
+    <div class="center">
+        <div class="center_content">
             <h5>新闻详情01</h5>
  <!--            <div class="xinwen">
                 <div class="content_title">
@@ -57,31 +67,36 @@
     </div>
     <footer id="foot">
         <div class="foot_content">
-            <div class="foot_left">
-                <ul>
-                    <li class="first">联系我们</li>
-                    <li>微信客服</li>
-                    <li>电话联系</li>
-                    <li>留言咨询</li>
-                </ul>
-                <ul>
-                    <li class="first">加入我们</li>
-                    <li>招商加盟</li>
-                    <li>招聘信息</li>
-                </ul>
-                <ul>
-                    <li class="first">线下门店</li>
-                    <li>所有门店</li>
-                </ul>
-            </div>
-            <div class="qc">
-                <div>
-                    <img src="images/公众号二维码.png" alt="" width="140px" height="140px">
-                    <span>关注我们</span>
+            <div class="foot_box">
+                <div class="foot_left">
+                    <ul>
+                        <li class="first">联系我们</li>
+                        <li>微信客服</li>
+                        <li>电话联系</li>
+                        <li>留言咨询</li>
+                    </ul>
+                    <ul>
+                        <li class="first">加入我们</li>
+                        <li>招商加盟</li>
+                        <li>招聘信息</li>
+                    </ul>
+                    <ul>
+                        <li class="first">线下门店</li>
+                        <li>所有门店</li>
+                    </ul>
+                </div>
+                <div class="foot_right">
+                    <div class="qc">
+                            <img src="images/公众号二维码.png" alt="">
+                            <span>关注我们</span>
+                    </div>
+                </div>
+                <div class="foot_bottom">
+                    <span class="left_float">粤ICP备19090896号-2</span>
+                    <span class="right_float">Copyright © 2020 快招 Team All Rights Reserved</span>
                 </div>
             </div>
         </div>
-        <a href=""></a>
     </footer>
     <script type="text/javascript">
 
