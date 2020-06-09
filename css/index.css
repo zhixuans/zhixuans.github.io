@@ -4,55 +4,6 @@ body{
     background-color: #f8f8f8;
     
 }
-
-/* 对头部信息设置样式 */
-#head{
-    height: 60px;
-    /* background-color: #fff; */
-    /* border-bottom: 1px solid #d9d9d9; */
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    width: 100%;
-}
-.header_content{
-    height: 60px;
-    margin: 0 auto;
-    width: 1200px;   
-}
-.logo{
-    margin-top:14px;
-    float: left;
-}
-.logo_img{
-    background: url(../images/logo-白.png) no-repeat center center;
-    background-size: cover;      
-    width: 64px;
-    height: 32px;
-}
-
-.header_right{
-    float: right;
-    /* width: 80%; */
-}
-.header_right li{
-    width: 70px;
-    height: 60px;
-    line-height: 60px;
-    margin-left: 70px;
-    float: right;
-    text-align: center;
-    list-style-type: none;
-    color: #fff;
-    font-size: 16px;
-}
-.header_right li a{
-    color:#fff;
-}
-.header_right li a:hover{
-    text-decoration: underline;
-}
 /* 设置banner样式 */
 .banner{
     /* margin-top: -80px; */
@@ -216,18 +167,6 @@ body{
     }
 }
 @media only screen and (max-width:1200px){
-    .header_content{
-        width: 100%;
-    }
-    .logo{
-        margin-left: 24px;
-    }
-    .header_right{
-        margin-right: 24px;
-    }
-    .header_right li{
-        width: 80px;
-    }
     .imgbox{
         height: 316px;
     }
@@ -266,9 +205,6 @@ body{
     }
 }
 @media only screen and (max-width:1000px){
-    .header_right li{
-        margin-left: 30px;
-    }
     .imgbox{
         height: 202px;
     }
@@ -285,32 +221,7 @@ body{
         padding: 108px 6.6% 130px 6.6%;
     }
 }
-@media only screen and (max-width:768px){
-    #head{
-        background-color: #fff;
-    }
-    .banner{
-        padding: 76px 16px 16px 16px;
-    }
-    .imgbox{
-        height: 128px;
-        border-radius:4px;
-    }
-    .logo{
-        margin-left: 0px;
-        width: 100%;
-    }
-    .logo_img{  
-        text-align: center;
-        margin: 0 auto;     
-        background: url(../images/logo-蓝.png) no-repeat center center;
-        width: 64px;
-        height: 32px;
-        background-size: cover;
-    }
-    .header_right{
-        display: none;        
-    }
+@media only screen and (max-width:840px){
     .xinwen_content{
         height: 300px;
         overflow: hidden;
@@ -321,4 +232,5 @@ body{
         margin-left: 0;
         margin-top: 16px;
     }
+
 }
