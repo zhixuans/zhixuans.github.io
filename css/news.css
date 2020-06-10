@@ -29,6 +29,7 @@ body{
 .content_title{
     height: 64px;
     background-color: #f8f8f8;
+    /* background-color:rgb(1, 1n, 100); */
 }
 .content_title h3{
     line-height: 64px;

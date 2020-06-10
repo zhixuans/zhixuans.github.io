@@ -19,13 +19,16 @@ a{
     left: 0;
     top: 0;
     width: 100%;
-}
-.head_fixed{
-    background-color: #fff;
     position: fixed;
 }
-.head_absolute{
-    position: absolute;
+.dis_w{
+    display: none;
+}
+.head_o{
+    background-color: rgba(255, 255, 255, 0);    
+}
+.head_w{
+    background-color: rgba(255, 255, 255, 1);
 }
 .header_content{
     height: 60px;
@@ -40,12 +43,12 @@ a{
 .logo_img{        
     width: 64px;
     height: 32px;
-}
-.logo_w{
     background: url(../images/logo-白.png) no-repeat center center;
     background-size: cover;  
 }
 .logo_b{
+    width: 64px;
+    height: 32px;
     background: url(../images/logo-蓝.png) no-repeat center center;
     background-size: cover;  
 }
@@ -64,10 +67,10 @@ a{
     list-style-type: none;  
     font-size: 16px;
 }
-.li_b li a{
+.head_w  li a{
     color: #222;
 }
-.li_w li a{
+.head_o li a{
     color:#fff;
 }
 .header_right li a:hover{
@@ -213,6 +216,16 @@ label{
         width: 100%;
     }
     .logo_img{  
+        text-align: center;
+        margin: 0 auto;     
+        background: url(../images/logo-蓝.png) no-repeat center center;
+        width: 64px;
+        height: 32px;
+        background-size: cover;
+        /* display: none; */
+    }
+    .logo_b{
+        /* display: block; */
         text-align: center;
         margin: 0 auto;     
         background: url(../images/logo-蓝.png) no-repeat center center;

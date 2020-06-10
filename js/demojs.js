@@ -1,25 +1,22 @@
-var a=getElementsByClassName("left");
-var b=a.childNodes[0].childNodes[0].childNodes
-
-
-// window.onload=function aaactive() {
-//     document.getElementById("defaultOpen").onmouseover();
-// }
-
-// function openCity(evt, cityName) {
-//     var i, tabcontent, tablinks;
-//     tabcontent = document.getElementsByClassName("tabcontent");
-//     for (i = 0; i < tabcontent.length; i++) {
-//         tabcontent[i].style.display = "none";
-//     }
-//     tablinks = document.getElementsByClassName("tablinks");
-//     for (i = 0; i < tablinks.length; i++) {
-//         tablinks[i].className = tablinks[i].className.replace(" active", "");
-//     }
-//     document.getElementById(cityName).style.display = "block";
-//     evt.currentTarget.className += " active";
-// }
-b[0].className = b[0].className.replace(" active", "");
-// document.getElementById(cityName).style.display = "block";
-b.currentTarget.className += " active";
-document.getElementById("defaultOpen").onclick();
+function scroll() {
+    var top = 60;//获取导航栏变色的位置距顶部的高度
+    var scrollTop = $(window).scrollTop();//获取当前窗口距顶部的高度
+    if (scrollTop < top) {
+        // $('.head_fixed').css('background-color', 'rgba(255, 255, 255, 0)');
+        // $('.li_w li a').css('color', '#ffffff');
+        // $('.logo_img').css('background', 'url(images/logo-白.png) no-repeat center center');
+        // $('.logo_img').css('background-size', 'cover');
+        $('.dis_o').css('display', 'block');
+        $('.dis_w').css('display', 'none');
+    } else {
+        // $('.head_fixed').css('background-color', 'rgba(255, 255, 255, 1)');
+        // $('.li_w li a').css('color', '#222222');
+        // $('.logo_img').css('background', 'url(images/logo-蓝.png) no-repeat center center');
+        // $('.logo_img').css('background-size', 'cover');
+        $('.dis_o').css('display', 'none');
+        $('.dis_w').css('display', 'block');
+    }
+}
+$(window).on('scroll', function() {
+    scroll()
+});
