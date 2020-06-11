@@ -41,15 +41,15 @@ a{
     height: 46px;
 }
 .logo_img{        
-    width: 64px;
+    width: 80px;
     height: 32px;
-    background: url(../images/logo-白.png) no-repeat center center;
+    background: url(../images/logo-light.svg) no-repeat center center;
     background-size: cover;  
 }
 .logo_b{
-    width: 64px;
+    width: 80px;
     height: 32px;
-    background: url(../images/logo-蓝.png) no-repeat center center;
+    background: url(../images/logo-dark.svg) no-repeat center center;
     background-size: cover;  
 }
 
@@ -204,13 +204,6 @@ label{
     #head{
         background-color: #fff;
     }
-    .banner{
-        padding: 76px 16px 16px 16px;
-    }
-    .imgbox{
-        height: 128px;
-        border-radius:4px;
-    }
     .logo{
         margin-left: 0px;
         width: 100%;
@@ -218,9 +211,9 @@ label{
     .logo_img{  
         text-align: center;
         margin: 0 auto;     
-        background: url(../images/logo-蓝.png) no-repeat center center;
-        width: 64px;
-        height: 32px;
+        background: url(../images/logo-dark.svg) no-repeat center center;
+        /* width: 94px; */
+        /* height: 32px; */
         background-size: cover;
         /* display: none; */
     }
@@ -228,9 +221,9 @@ label{
         /* display: block; */
         text-align: center;
         margin: 0 auto;     
-        background: url(../images/logo-蓝.png) no-repeat center center;
-        width: 64px;
-        height: 32px;
+        background: url(../images/logo-dark.svg) no-repeat center center;
+        /* width: 94px; */
+        /* height: 32px; */
         background-size: cover;
     }
     .foot_left{

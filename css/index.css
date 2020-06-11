@@ -11,7 +11,7 @@ body{
 }
 .imgbox{
     width: 100%;
-    background: url(../images/banner-找工作上快招.jpg) no-repeat center center;
+    background: url(../images/banner01.jpg) no-repeat center center;
     background-size: cover;
     height: 500px;
 }
@@ -21,16 +21,28 @@ body{
     background-size: cover;
 }
 /* 设置中间样式 */
+.center{
+    /* z-index: 13; */
+    background-color: #f8f8f8;
+    width: 100%;
+    /* margin-top: 60px; */
+    /* clear:both; */
+    overflow: hidden;
+    /* display: block; */
+}
 .center_content{
     background-color: #f8f8f8;
     width: 1200px;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 /* 设置新闻样式 */
 .xinwen{
-    overflow: hidden;
+    /* clear: both; */
+    /* overflow: hidden; */
     margin-top: 24px;
+    margin-bottom: 24px;
+    /* height: 400px; */
 }
 .content_title{
     height: 64px;
@@ -41,12 +53,31 @@ body{
     font-size: 24px;
 }
 .xinwen_content{
-    margin-left: -24px;
+    margin-left: -12px;
+    margin-right: -12px;
 }
 .xinwen_item{
-    width: 384px;
+    width: 408px;
     float: left;
-    margin-left: 24px;
+    /* margin-left: 24px; */
+}
+.item_box{
+    margin: 0 12px 24px 12px;
+    border-radius:8px 8px 8px 8px;
+    display: block;
+    transition: all .3s ease;
+    overflow: hidden;
+    /* clear: both; */
+    /* background-color: white; */
+}
+.item_box:hover{
+    /* background-color: white; */
+    /* margin-top: 0px; */
+    /* margin-bottom: 29px; */
+    box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.1);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
 }
 .xinwen_img{
     background: url(../images/新闻资讯大图01.jpg) no-repeat center center;
@@ -57,26 +88,37 @@ body{
     border-radius:8px 0 0 8px;
 }
 .xinwen_neirong{
-    padding: 16px;
+    /* padding: 16px; */
     float: right;
-    width: 212px;
-    height: 108px;
+    width: 244px;
+    height: 140px;
     background-color: #fff;
     border-radius: 0 8px 8px 0;
+}
+.neirong_box{
+    padding: 16px;
 }
 .xinwen_neirong h4{
     font-size: 16px;
     color: #222;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden; 
 }
 .xinwen_neirong p{
     margin-top: 8px;
     font-size: 14px;
     color: #666;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden; 
 }
 /* 设置快招平台样式 */
 .kuaizhaopingtai{
     overflow: hidden;
-    margin-top: 24px;
+    /* margin-top: 24px; */
     background-color: #fff;
     width: 1200px;
     height: 504px;
@@ -166,29 +208,24 @@ body{
         height: 380px;
     }
 }
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1248px){
     .imgbox{
         height: 316px;
     }
     .center_content{
         width: 100%;
     }
-    .center_box{
-        padding: 0 16px;
-    }
-    .xinwen_content{
-        margin-left: -2%;
+    .xinwen{
+        padding: 0 24px; 
     }
     .xinwen_item{
-        width: 31%;
-        margin-left: 2%;
+        width: 33.33%;
     }
     .xinwen_img{
-        width: 36.5%;
+        width: 36%;
     }
     .xinwen_neirong{
-        width: 50.5%;
-        padding: 16px 6.5% 16px 6.5%;
+        width: 64%;
     }
     .kuaizhaopingtai{
         width: 100%;
@@ -213,8 +250,7 @@ body{
         overflow: hidden;
     }
     .xinwen_item{
-        width: 47%;
-        margin-left: 2%;
+        width: 50%;
     }
     .kuaizhao_left{
         width: 44.3%;
@@ -222,15 +258,53 @@ body{
     }
 }
 @media only screen and (max-width:840px){
+    .banner{
+        padding: 76px 16px 16px 16px;
+    }
+    .imgbox{
+        height: 180px;
+        border-radius:4px;
+    }
+    .xinwen{
+        padding: 0 16px; 
+        /* overflow: hidden; */
+        margin-top: 0px;
+    }
+    .content_title{
+        height: 50px;
+        background-color: #f8f8f8;
+        /* background-color:rgb(1, 1n, 100); */
+    }
+    .content_title h3{
+        line-height: 50px;
+        font-size: 16px;
+    }
     .xinwen_content{
-        height: 300px;
-        overflow: hidden;
-        margin-top: -16px;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+    .item_box{
+        margin: 0 8px 16px 8px;
+    }
+
+}
+@media only screen and (max-width:480px){
+    .imgbox{
+        height: 128px;
     }
     .xinwen_item{
         width: 100%;
-        margin-left: 0;
-        margin-top: 16px;
+        /* margin-bottom: 16px; */
+        /* clear: both; */
     }
-
+    .xinwen_content{
+        margin-left: -8px;
+        margin-right: -8px;
+        /* margin-top: -16px; */
+        height: 452px;
+        overflow: hidden;
+    }
+    .item_box{
+        margin: 0 8px 16px 8px;
+    }
 }
