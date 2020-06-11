@@ -1,7 +1,7 @@
 var data = {
     "proList": [
        {
-           "img": "images/新闻资讯大图01.jpg",
+           "img": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3229268207,1882758021&fm=26&gp=0.jpg",
            "link": "new_page01.html",
            "title": "央行将在香港发行300亿元央票 年内已发行400亿，中新经纬01年内已发行400亿，中新经纬01年内已发行400亿，中新经纬01",
            "desc": "展旺物流（民众格力小家电外民众格力小家电民众格力小家电民众格力小家电民众格力小家电民众格力小家电民众格力小家电民众格力小家电",
