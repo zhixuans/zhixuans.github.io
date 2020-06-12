@@ -9,13 +9,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>快招</title>
+    <title>XUAN的个人主页</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script> -->
     <!-- <script type="text/javascript" src="js/jquery.js"></script> -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/demojs.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/public.css"> 
 </head>
@@ -39,17 +40,11 @@
                     <li class="java">
                         <a href="index.html">首页</a>
                     </li>
-                    <li class="html5">
-                        <a href="news.html">关于快招</a>
-                    </li>
-                    <li class="big">
-                        <a href="news.html">招商加盟</a>
-                    </li>
                     <li class="php">
-                        <a href="news.html">新闻资讯</a>
+                        <a href="news.html">全部文章</a>
                     </li>
                     <li class="shouye">
-                        <a href="news.html">加入我们</a>
+                        <a href="news.html">联系我们</a>
                     </li>
                 </ul>
             </div>
@@ -67,17 +62,11 @@
                     <li class="java">
                         <a href="index.html">首页</a>
                     </li>
-                    <li class="html5">
-                        <a href="news.html">关于快招</a>
-                    </li>
-                    <li class="big">
-                        <a href="news.html">招商加盟</a>
-                    </li>
                     <li class="php">
-                        <a href="news.html">新闻资讯</a>
+                        <a href="news.html">全部文章</a>
                     </li>
                     <li class="shouye">
-                        <a href="news.html">加入我们</a>
+                        <a href="news.html">联系我们</a>
                     </li>
                 </ul>
             </div>
@@ -93,16 +82,34 @@
         <div class="center_content">
             <div class="xinwen">
                 <div class="content_title">
-                    <h3>精选新闻</h3>
+                    <h3>精选文章</h3>
+                    <a href="news.html" class="more">查看全部</a>
                 </div>
-                <div class="xinwen_content">
-                    <div class="xinwen_item">
+                <div id="xinwen_content">
+                   <!--  <div class="xinwen_item">
                         <a href="new_page01.html" class="item_box">
                         <div class="xinwen_img"></div>
                         <div class="xinwen_neirong">
                             <div class="neirong_box">
+                                <div class="tad">
                             <h4>展旺物流（民众格力小家电外包服务商）招聘包服务商）招聘</h4>
-                            <p>展旺物流（民众格力小家电外…</p>
+                            <p>展旺物流（民众格力小家电外小家电外小家电外小家电外</p>
+                        </div>
+                            <p>2020.04.29</p>
+                        
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="xinwen_item">
+                        <a href="new_page01.html" class="item_box">
+                        <div class="xinwen_img"></div>
+                        <div class="xinwen_neirong">
+                            <div class="neirong_box">
+                                <div class="tad">
+                                    <h4>展旺物流（民众格力小家电外包服务商）招聘包服务商）招聘</h4>
+                                    <p>展旺物流（民众格力小家电外小家电外小家电外小家电外</p>
+                                </div>
                             <p>2020.04.29</p>
                             </div>
                         </div>
@@ -113,25 +120,15 @@
                         <div class="xinwen_img"></div>
                         <div class="xinwen_neirong">
                             <div class="neirong_box">
-                            <h4>展旺物流（民众格力小家电外包服务商）招聘</h4>
-                            <p>展旺物流（民众格力小家电外…</p>
+                                <div class="tad">
+                                    <h4>展旺物流（民众格力小家电外包服务商）招聘包服务商）招聘</h4>
+                                    <p>展旺物流（民众格力小家电外小家电外小家电外</p>
+                                </div>
                             <p>2020.04.29</p>
                             </div>
                         </div>
                         </a>
-                    </div>
-                    <div class="xinwen_item">
-                        <a href="new_page01.html" class="item_box">
-                        <div class="xinwen_img"></div>
-                        <div class="xinwen_neirong">
-                            <div class="neirong_box">
-                            <h4>展旺物流（民众格力小家电外包服务商）招聘</h4>
-                            <p>展旺物流（民众格力小家电外…</p>
-                            <p>2020.04.29</p>
-                            </div>
-                        </div>
-                        </a>
-                    </div>
+                    </div> -->
                  
                   
                 </div>
@@ -186,12 +183,22 @@
                 </div>
                 <div class="foot_bottom">
                     <span class="left_float">粤ICP备19090896号-2</span>
-                    <span class="right_float">Copyright © 2020 快招 Team All Rights Reserved</span>
+                    <span class="right_float">Copyright © 2020 XUAN Team All Rights Reserved</span>
                 </div>
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
 
+ 
+        var str = '';
+        for (var i = 0; i < 3; i++) {
+            str = str + '<div class="xinwen_item"><a href="'+ data.proList[i].link +'" class="item_box"><div class="xinwen_img" style="background: url('+ data.proList[i].img +') no-repeat center center;background-size:cover;"></div><div class="xinwen_neirong"><div class="neirong_box"><div class="tad"><h4>'+ data.proList[i].title +'</h4><p class="desc">'+ data.proList[i].desc +'</p></div><p>'+ data.proList[i].time +'</p></div></div></a></div>';
+        }
+        
+        console.log(str);
+        document.getElementById('xinwen_content').innerHTML=str;
+       </script>
 </body>
 
 </html>

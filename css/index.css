@@ -50,9 +50,22 @@ body{
 }
 .content_title h3{
     line-height: 64px;
+    color: #222;
     font-size: 24px;
+    display: block;
+    float: left;
 }
-.xinwen_content{
+.content_title a{
+    font-size: 16px;
+    line-height: 64px;
+    color: #666;
+    display: block;
+    float: right;
+}
+.content_title a:hover{
+    text-decoration: underline;
+}
+#xinwen_content{
     margin-left: -12px;
     margin-right: -12px;
 }
@@ -97,6 +110,9 @@ body{
 }
 .neirong_box{
     padding: 16px;
+}
+.tad{
+    height: 80px;
 }
 .xinwen_neirong h4{
     font-size: 16px;
@@ -245,9 +261,9 @@ body{
     .imgbox{
         height: 202px;
     }
-    .xinwen_content{
-        height: 140px;
-        overflow: hidden;
+    #xinwen_content{
+        /* height: 160px; */
+        /* overflow: hidden; */
     }
     .xinwen_item{
         width: 50%;
@@ -279,7 +295,7 @@ body{
         line-height: 50px;
         font-size: 16px;
     }
-    .xinwen_content{
+    #xinwen_content{
         margin-left: -8px;
         margin-right: -8px;
     }
@@ -297,7 +313,7 @@ body{
         /* margin-bottom: 16px; */
         /* clear: both; */
     }
-    .xinwen_content{
+    #xinwen_content{
         margin-left: -8px;
         margin-right: -8px;
         /* margin-top: -16px; */
