@@ -33,7 +33,8 @@ a{
 .header_content{
     height: 60px;
     margin: 0 auto;
-    width: 1200px;   
+    width: 1200px;
+    clear: both;
 }
 .logo{
     margin-top:14px;
@@ -58,7 +59,7 @@ a{
     /* width: 80%; */
 }
 .header_right li{
-    width: 70px;
+    /* width: 70px; */
     height: 60px;
     line-height: 60px;
     margin-left: 70px;
@@ -120,34 +121,17 @@ label{
 .foot_box{
     margin-top: 48px;
 }
-.foot_left{
-    width: 500px;
-    float: left;
-}
+
 .foot_right{
-    float: right;
+    margin: 0 auto;
+    width: 100%;
+
     /* width: 140px; */
     /* height: 162x; */
 }
-.foot_left li{
-    list-style-type: none;
-    font-size: 14px;
-    line-height: 36px;
-    color: #222;
-}
-.foot_left ul{
-    float: left;
-    margin-right: 68px;
-    /* line-height: 24px; */
-}
-
-.foot_left .first{
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 16px;
-}
 .qc{
-    width: 140px;
+    margin: 0 auto;
+    width: 162px;
     height: 162x;
     /* float: right; */
     padding: 8px 0 10px 0;
@@ -171,6 +155,7 @@ label{
     clear: both;
     font-size: 14px;
     color: #222;
+    text-align: center;
 }
 .foot_bottom span{
     display: block;
@@ -184,9 +169,6 @@ label{
     }
     .header_right{
         margin-right: 24px;
-    }
-    .header_right li{
-        width: 80px;
     }
     .foot_content{
         width: 100%;
@@ -242,7 +224,7 @@ label{
     }
     .qc{
         margin: 16px auto;
-        width: 100px;
+        width: 126px;
         height: 126px;
         padding: 4px 0 4px 0;
         border-radius:4px;

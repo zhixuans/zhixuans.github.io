@@ -2,23 +2,20 @@
 /* 对头部底部中间进项通用样式设置 */
 body{
     background-color: #f8f8f8;
+    /* overflow: hidden; */
     
 }
 /* 设置banner样式 */
 .banner{
     /* margin-top: -80px; */
     z-index: 1;
+    /* position: relative; */
 }
 .imgbox{
     width: 100%;
     background: url(../images/banner01.jpg) no-repeat center center;
     background-size: cover;
     height: 500px;
-}
-
-.ad{
-    background: url(../images/banner-找工作上快招.jpg) no-repeat center;
-    background-size: cover;
 }
 /* 设置中间样式 */
 .center{
@@ -27,7 +24,7 @@ body{
     width: 100%;
     /* margin-top: 60px; */
     /* clear:both; */
-    overflow: hidden;
+    /* overflow: hidden; */
     /* display: block; */
 }
 .center_content{
@@ -38,15 +35,13 @@ body{
 }
 /* 设置新闻样式 */
 .xinwen{
-    /* clear: both; */
-    /* overflow: hidden; */
-    margin-top: 24px;
-    margin-bottom: 24px;
-    /* height: 400px; */
+    margin: 24px 0;
 }
 .content_title{
     height: 64px;
     background-color: #f8f8f8;
+    clear: both;
+    width: 100%;
 }
 .content_title h3{
     line-height: 64px;
@@ -66,13 +61,14 @@ body{
     text-decoration: underline;
 }
 #xinwen_content{
+    /* overflow: hidden; */
+    clear: both;
     margin-left: -12px;
     margin-right: -12px;
 }
 .xinwen_item{
-    width: 408px;
+    width: 33.33%;
     float: left;
-    /* margin-left: 24px; */
 }
 .item_box{
     margin: 0 12px 24px 12px;
@@ -80,30 +76,22 @@ body{
     display: block;
     transition: all .3s ease;
     overflow: hidden;
-    /* clear: both; */
-    /* background-color: white; */
 }
 .item_box:hover{
-    /* background-color: white; */
-    /* margin-top: 0px; */
-    /* margin-bottom: 29px; */
     box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.1);
     -webkit-transform: translateY(-5px);
     transform: translateY(-5px);
     -ms-transform: translateY(-5px);
 }
 .xinwen_img{
-    background: url(../images/新闻资讯大图01.jpg) no-repeat center center;
-    background-size:cover;
-    width: 140px;
+    width: 36%;
     height: 140px;
     float: left;
     border-radius:8px 0 0 8px;
 }
 .xinwen_neirong{
-    /* padding: 16px; */
     float: right;
-    width: 244px;
+    width: 64%;
     height: 140px;
     background-color: #fff;
     border-radius: 0 8px 8px 0;
@@ -232,29 +220,7 @@ body{
         width: 100%;
     }
     .xinwen{
-        padding: 0 24px; 
-    }
-    .xinwen_item{
-        width: 33.33%;
-    }
-    .xinwen_img{
-        width: 36%;
-    }
-    .xinwen_neirong{
-        width: 64%;
-    }
-    .kuaizhaopingtai{
-        width: 100%;
-    }
-    .kuaizhao_left{
-        width: 36.3%;
-        padding: 108px 6.6% 130px 14.6%;
-    }
-    .kuaizhao_right{
-        float: right;
-        width: 42.5%;
-        height: 504px;
-        margin: 72px auto;
+        padding: 0 24px;
     }
 }
 @media only screen and (max-width:1000px){
@@ -267,10 +233,6 @@ body{
     }
     .xinwen_item{
         width: 50%;
-    }
-    .kuaizhao_left{
-        width: 44.3%;
-        padding: 108px 6.6% 130px 6.6%;
     }
 }
 @media only screen and (max-width:840px){
@@ -304,7 +266,7 @@ body{
     }
 
 }
-@media only screen and (max-width:480px){
+@media only screen and (max-width:600px){
     .imgbox{
         height: 128px;
     }
@@ -318,7 +280,7 @@ body{
         margin-right: -8px;
         /* margin-top: -16px; */
         height: 452px;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .item_box{
         margin: 0 8px 16px 8px;

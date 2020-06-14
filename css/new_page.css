@@ -8,6 +8,7 @@ body{
     /* position: relative; */
     margin-top: 84px;
     overflow: hidden;
+    min-height:500px;
     /* margin-bottom: 24px; */
 }
 .center_content{
